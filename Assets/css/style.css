@@ -1,0 +1,106 @@
+/*************************All*************************/
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*************************Design*************************/
+body {
+  background-color: rgba(227, 250, 255, 0.867);
+}
+
+body .mainDesign {
+  height: 100vh;
+}
+
+body .mainDesign .innerSectionDesign {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body .mainDesign .innerSectionDesign .mainHeading {
+  font-family: "Great Vibes", cursive;
+  color: #c59d5f;
+  margin-bottom: 25px;
+}
+
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 15px 0;
+  width: 550px;
+}
+
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign {
+  font-family: "Open Sans", sans-serif;
+  letter-spacing: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign p {
+  margin-bottom: 0;
+}
+
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #ffff;
+  outline: none;
+  padding: 1px 1px;
+  border: 3px solid #c59d5f;
+  border-radius: 5px;
+}
+
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign button:hover {
+  cursor: pointer;
+}
+
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign button i {
+  color: #c59d5f;
+}
+
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .questionDesign {
+  display: none;
+  font-family: "Open Sans", sans-serif;
+  border-top: 1px solid #cccc;
+  width: 100%;
+}
+
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .questionDesign p {
+  color: rgba(0, 236, 253, 0.867);
+}
+
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .questionDesign.openBox {
+  display: block;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+/*# sourceMappingURL=style.css.map */

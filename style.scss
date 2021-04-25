@@ -1,0 +1,92 @@
+$primaryColor : #0000;
+$secondaryColor: #ffff;
+$thridColor: rgba(227, 250, 255, 0.867);
+$fourthColor: #c59d5f;
+$fifthColor: #cccc;
+$sixthColor: rgba(0, 236, 253, 0.867);
+
+
+
+$headingFontFamily: "Great Vibes", cursive;
+$boxFontFamily: "Open Sans", sans-serif;
+
+
+/*************************All*************************/
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+
+/*************************Design*************************/
+
+
+body {
+    background-color: $thridColor;
+    .mainDesign {
+        height: 100vh;
+        .innerSectionDesign {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            .mainHeading {
+                font-family: $headingFontFamily;
+                color: $fourthColor;
+                margin-bottom: 25px;
+            }
+            .boxesContainer {
+
+                .boxesDesign {
+                    display: flex;
+                    margin: 15px 0;
+                    // padding: 15px 15px;
+                    width: 550px;
+                    .innerDesign {
+                        font-family: $boxFontFamily;
+                        letter-spacing: 3px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        width: 100%;
+                        p {
+                            margin-bottom: 0;
+                        }
+                        button {
+                            display: flex;
+                            align-items: center;
+                            background-color: $secondaryColor;
+                            outline: none;
+                            padding: 1px 1px;
+                            border: 3px solid $fourthColor;
+                            border-radius: 5px;
+                            &:hover {
+                                cursor: pointer;
+                            }
+                            i {
+                                color: $fourthColor;
+                            }
+                        }
+                    }
+                    .questionDesign {
+                        display: none;
+                        font-family: $boxFontFamily;
+                        border-top: 1px solid $fifthColor;
+                        width: 100%;
+                        p {
+                            color: $sixthColor;
+                        }
+                        &.openBox {
+                            display: block;
+                            transition: 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
