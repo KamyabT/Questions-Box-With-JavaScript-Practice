@@ -39,9 +39,6 @@ body .mainDesign .innerSectionDesign .mainHeading {
 }
 
 body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   margin: 15px 0;
   width: 550px;
 }
@@ -49,6 +46,10 @@ body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign {
 body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign {
   font-family: "Open Sans", sans-serif;
   letter-spacing: 3px;
+  width: 100%;
+}
+
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign .questionContainer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -58,14 +59,14 @@ body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 100%;
+  padding: 15px;
 }
 
-body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign p {
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign .questionContainer p {
   margin-bottom: 0;
 }
 
-body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign button {
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign .questionContainer button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -79,26 +80,26 @@ body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign b
   border-radius: 5px;
 }
 
-body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign button:hover {
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign .questionContainer button:hover {
   cursor: pointer;
 }
 
-body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign button i {
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign .questionContainer button i {
   color: #c59d5f;
 }
 
-body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .questionDesign {
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign .questionDesign {
   display: none;
   font-family: "Open Sans", sans-serif;
   border-top: 1px solid #cccc;
   width: 100%;
 }
 
-body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .questionDesign p {
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign .questionDesign p {
   color: rgba(0, 236, 253, 0.867);
 }
 
-body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .questionDesign.openBox {
+body .mainDesign .innerSectionDesign .boxesContainer .boxesDesign .innerDesign .questionDesign.openBox {
   display: block;
   -webkit-transition: 0.3s;
   transition: 0.3s;
